@@ -21,7 +21,13 @@ smallest = number
 
 number = int(input("Enter another number: "))
 
-if number < smallest:
+yes = number
+
+number = int(input("Enter another number: "))
+
+if number < smallest and number < yes:
   smallest = number
+elif yes < number and yes < smallest:
+  smallest = yes
   
 print("The smallest number is ", smallest)
